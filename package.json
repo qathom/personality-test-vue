@@ -1,13 +1,17 @@
 {
   "name": "personality-test-vue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "ts-node --project tsconfig.build.json ./bin/deploy.ts"
+  },
+  "author": {
+    "name": "qathom"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -43,10 +47,12 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "execa": "^4.0.0",
     "geckodriver": "^1.19.1",
     "moment": "^2.24.0",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
+    "ts-node": "^8.10.1",
     "typescript": "~3.8.3",
     "vue-template-compiler": "^2.6.11"
   }
