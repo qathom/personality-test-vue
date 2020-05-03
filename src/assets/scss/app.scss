@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@0;1&family=IBM+Plex+Sans+Condensed:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Serif:ital@0;1&display=swap');
+
+// Override Bootstrap variables
+$font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$border-radius: 0;
+
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-vue/src/index';
+
+// Style
+html,
+body,
+#app {
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+#main-container {
+  // Push content down (navbar)
+  padding-top: 56px;
+  height: 100%;
+}
+
+.scrollable {
+  max-height: 800px;
+  overflow: auto;
+}
