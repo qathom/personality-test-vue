@@ -135,14 +135,17 @@ export default class PersonalityTestResultView extends Vue {
       [PersonalityColor.Yellow]: '#FFDC00',
     };
 
-    const keys: PersonalityColor[] = this.getKeyResultByOrder() as PersonalityColor[];
+    const keys = this.getKeyResultByOrder() as PersonalityColor[];
+
+    // Removed 0 scores for any personality color
+    const chartKeys = keys.filter((k: PersonalityColor) => this.result[k] > 0);
 
     this.chartData = {
-      labels: keys,
+      labels: chartKeys,
       datasets: [
         {
-          backgroundColor: keys.map((k: PersonalityColor) => colors[k] || '#ddd'),
-          data: keys.map((k) => this.result[k]),
+          backgroundColor: chartKeys.map((k: PersonalityColor) => colors[k] || '#ddd'),
+          data: chartKeys.map((k) => this.result[k]),
         },
       ],
     };
