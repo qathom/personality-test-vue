@@ -163,12 +163,11 @@ export default class PersonalityTest extends Vue {
   }
 
   .list-enter-active {
-    transition: transform 1.2s, opacity 1.2s;
+    transition: opacity 1.2s;
   }
 
   .list-enter {
     opacity: 0;
-    transform: translateY(30px);
   }
 
   .list-leave,
