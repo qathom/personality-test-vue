@@ -27,6 +27,7 @@ jobs:
   gh-pages-deploy:
     name: Deploying to gh-pages
     runs-on: ubuntu-latest
+    needs: run-tests
     steps:
       - name: Setup Node.js
         uses: actions/setup-node@v1.1.0
