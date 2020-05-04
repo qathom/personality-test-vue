@@ -7,8 +7,10 @@ import {
   TabsPlugin,
 } from 'bootstrap-vue';
 
-Vue.use(LayoutPlugin);
-Vue.use(NavbarPlugin);
-Vue.use(ButtonPlugin);
-Vue.use(ProgressPlugin);
-Vue.use(TabsPlugin);
+export default [
+  LayoutPlugin,
+  NavbarPlugin,
+  ButtonPlugin,
+  ProgressPlugin,
+  TabsPlugin,
+];
