@@ -12,7 +12,7 @@
 
     <b-tabs class="mt-3" content-class="pt-3" fill>
       <b-tab
-        v-for="(color, index) in ['RED', 'BLUE', 'GREEN', 'YELLOW']"
+        v-for="(color, index) in personalityColors"
         :key="index"
         :active="isColorDominant(color)"
       >
@@ -65,6 +65,8 @@ export default class PersonalityTestResultView extends Vue {
 
   private chartData!: object;
 
+  private personalityColors: string[] = [];
+
   private chartOptions: object = {
     legend: {
       display: false,
@@ -87,6 +89,8 @@ export default class PersonalityTestResultView extends Vue {
   private created() {
     this.buildTestResult();
     this.fillChartData();
+
+    this.personalityColors = Object.keys(this.result);
   }
 
   private isColorDominant(color: PersonalityColor) {
