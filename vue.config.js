@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/personality-test-vue/',
+  publicPath: process.env.NODE_ENV === 'development' ? '/' : '/personality-test-vue/',
 };
