@@ -2,6 +2,8 @@
 
 > Hartman Personality Profile test with 4 colors in Vue
 
+![Run tests and deploy to github pages](https://github.com/qathom/personality-test-vue/workflows/Run%20tests%20and%20deploy%20to%20github%20pages/badge.svg)
+
 ## Installation
 ```
 npm install
