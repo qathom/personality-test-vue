@@ -21,7 +21,7 @@ npm run serve
 npm run build
 ```
 
-### Run your unit tests
+### Run unit tests
 ```
 npm run test:unit
 ```
@@ -31,6 +31,6 @@ npm run test:unit
 npm run lint
 ```
 
-### Personality profile data
+## Personality profile data
 
 The description of each personality color and the questions are coming from the document [The Colours personality test written by Skills for Care](https://www.skillsforcare.org.uk/Documents/Leadership-and-management/well-led/Day-1-17/1.4.1-Colour-Personality-Test-FULL.pdf).
