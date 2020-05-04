@@ -1,5 +1,8 @@
 import { TestWordGroup, PersonalityColor } from '../../types';
 
+/*
+ * Group of questions with words used in the personality test
+ */
 const questionGroups: TestWordGroup[] = [
   [
     { id: 1, word: 'self-confident', color: PersonalityColor.Red },
