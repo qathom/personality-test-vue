@@ -18,6 +18,8 @@ const folderName = 'dist';
 
     await execa('git', ['push', 'origin', 'HEAD:gh-pages', '--force']);
     await execa('rm', ['-r', folderName]);
+    await execa('git', ['remote ', 'update']);
+    await execa('git', ['fetch']);
     await execa('git', ['checkout', '-f', 'master']);
     await execa('git', ['branch', '-D', 'gh-pages']);
 
