@@ -2,10 +2,12 @@ name: Run tests and deploy to github pages (master)
 on:
   push:
     paths:
-    - '**.js'
-    - '**.ts'
-    - '**.scss'
-    - '**.vue'
+      - '**.js'
+      - '**.ts'
+      - '**.scss'
+      - '**.vue'
+    tags:
+      - 'v*'
     branches:
       - master
 jobs:

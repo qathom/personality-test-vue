@@ -2,10 +2,10 @@ name: Run tests (dev)
 on:
   push:
     paths:
-    - '**.js'
-    - '**.ts'
-    - '**.scss'
-    - '**.vue'
+      - '**.js'
+      - '**.ts'
+      - '**.scss'
+      - '**.vue'
     branches:
       - dev
 jobs:
