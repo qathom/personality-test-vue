@@ -20,7 +20,7 @@
           :key="`${item.id}-${index}`"
           :variant="isWordSelected(item) ? 'primary' : 'light'"
           @click.prevent="onSelectWord(item)"
-          class="d-block w-100"
+          class="d-block w-100 btn-answer"
         >
           {{item.word}}
         </b-button>
