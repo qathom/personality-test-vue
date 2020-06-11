@@ -6,6 +6,7 @@ import {
 } from 'vue-property-decorator';
 import { Doughnut, mixins } from 'vue-chartjs';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { ChartData, ChartOptions } from 'chart.js';
 
 @Component({
   extends: Doughnut,
@@ -13,10 +14,10 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
 })
 export default class DoughnutChart extends Mixins(Doughnut) {
   @Prop(Object)
-  readonly chartData!: object
+  readonly chartData!: ChartData;
 
   @Prop(Object)
-  readonly options!: object
+  readonly options!: ChartOptions;
 
   mounted() {
     this.addPlugin(ChartDataLabels);
