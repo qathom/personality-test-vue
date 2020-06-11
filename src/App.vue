@@ -12,6 +12,11 @@
 import { Component, Vue } from 'vue-property-decorator';
 import PrimaryNavbar from '@/components/PrimaryNavbar.vue';
 
+/**
+ * The App component is the root component
+ * It includes the style and the primary navbar so that
+ * they are available everywhere
+ */
 @Component({
   components: {
     PrimaryNavbar,

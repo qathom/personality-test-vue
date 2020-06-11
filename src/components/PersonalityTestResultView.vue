@@ -44,6 +44,11 @@ import {
   TestWordGroup,
 } from '../../types';
 
+/**
+ * This component is showing the results of the profile test
+ * It uses the doughnut chart component to show the color landscape of the user
+ * It also shows the meaning behind these colors
+ */
 @Component({
   components: {
     DoughnutChart,
