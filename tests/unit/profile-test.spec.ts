@@ -1,28 +1,24 @@
 import PersonalityTest from '@/components/PersonalityTest.vue';
-import { createLocalVue, mount } from '@vue/test-utils'
+import { createLocalVue, mount } from '@vue/test-utils';
 import bootstrapPlugins from '@/plugins/bootstrap-vue';
 import { BvPlugin } from 'bootstrap-vue';
 import Vuex from 'vuex';
-import { getters, moduleState } from '@/store/modules/test';
 import store from '@/store';
 
-const localVue = createLocalVue()
+const localVue = createLocalVue();
 
 // Install plugins
 bootstrapPlugins.forEach((plugin: BvPlugin) => {
   localVue.use(plugin);
 });
 
-localVue.use(Vuex)
+localVue.use(Vuex);
 
-const wait = (time: number) => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, time);
-  })
-}
+const wait = (time: number) => new Promise((resolve) => {
+  setTimeout(resolve, time);
+});
 describe('ProfileTest.vue', () => {
-
-  let previousProgressValue = 0
+  let previousProgressValue = 0;
 
   const wrapper = mount(PersonalityTest, {
     store,
@@ -39,7 +35,7 @@ describe('ProfileTest.vue', () => {
     expect(wrapper.vm.$data.progressValue).toBeGreaterThan(0);
 
     // Update
-    previousProgressValue = wrapper.vm.$data.progressValue
+    previousProgressValue = wrapper.vm.$data.progressValue;
   });
 
   it('updates the progress bar after an answer selection', async () => {

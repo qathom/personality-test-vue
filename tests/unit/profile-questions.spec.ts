@@ -1,16 +1,18 @@
 import questionGroups from '@/data/test-data';
-import { TestWord } from 'types';
+import { TestWord } from '../../types';
 
-const countRelatedItems = (checkKey: keyof TestWord, checkValue: number|string): number => {
-  return questionGroups.reduce((acc, group) => {
-    group.forEach((question: TestWord) => {
-      if (question[checkKey] === checkValue) {
-        acc += 1;
-      }
-    });
-    return acc;
-  }, 0);
-}
+const countRelatedItems = (
+  checkKey: keyof TestWord,
+  checkValue: number|string,
+  /* eslint no-param-reassign: 0 */
+): number => questionGroups.reduce((acc, group) => {
+  group.forEach((question: TestWord) => {
+    if (question[checkKey] === checkValue) {
+      acc += 1;
+    }
+  });
+  return acc;
+}, 0);
 
 describe('Profile questions', () => {
   questionGroups.forEach((group) => {

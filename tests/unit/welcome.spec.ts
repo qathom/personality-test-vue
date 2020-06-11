@@ -1,9 +1,9 @@
 import Welcome from '@/components/Welcome.vue';
-import { createLocalVue, mount } from '@vue/test-utils'
+import { createLocalVue, mount } from '@vue/test-utils';
 import bootstrapPlugins from '@/plugins/bootstrap-vue';
 import { BvPlugin } from 'bootstrap-vue';
 
-const localVue = createLocalVue()
+const localVue = createLocalVue();
 
 // Install plugins
 bootstrapPlugins.forEach((plugin: BvPlugin) => {
