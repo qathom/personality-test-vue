@@ -14,9 +14,8 @@ bootstrapPlugins.forEach((plugin: BvPlugin) => {
 
 localVue.use(Vuex);
 
-const wait = (time: number) => new Promise((resolve) => {
-  setTimeout(resolve, time);
-});
+const wait = (time: number) => new Promise((resolve) => setTimeout(resolve, time));
+
 describe('ProfileTest.vue', () => {
   let previousProgressValue = 0;
 
