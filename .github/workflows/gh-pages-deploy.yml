@@ -1,4 +1,4 @@
-name: Run tests and deploy to github pages
+name: Run tests and deploy to github pages (master)
 on:
   push:
     paths:
