@@ -50,6 +50,15 @@ npm run test:unit
 npm run lint
 ```
 
+### Release a version
+
+From the dev branch, you can run `npm run release` to increment the package version, push the git tag and merge dev into master.
+This will trigger the Github Action workflow that is managing the deployment of the app on Github Pages.
+
+```
+npm run release
+```
+
 ### Build and run with Docker
 
 ```bash
