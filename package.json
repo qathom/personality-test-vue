@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "deploy": "ts-node --project tsconfig.build.json ./bin/deploy.ts",
-    "release": "ts-node --compiler-options '{ \"module\": \"commonjs\" }' ./bin/release.ts"
+    "release": "ts-node --compiler-options '{ \"module\": \"commonjs\" }' ./bin/release.ts && git merge origin/master"
   },
   "author": {
     "name": "Anthony Meizoso",

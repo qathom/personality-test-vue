@@ -11,8 +11,6 @@ async function execute(command: string) {
   return stdout || stderr;
 }
 
-const wait = (time: number) => new Promise((resolve) => setTimeout(resolve, time));
-
 (async () => {
   // Get current branch
   const branch = await execute('git rev-parse --abbrev-ref HEAD');
@@ -37,19 +35,6 @@ const wait = (time: number) => new Promise((resolve) => setTimeout(resolve, time
 
     // Push
     await execute('git push --follow-tags');
-
-    // Update current branch with master
-    const { update } = await inquirer.prompt({
-      type: 'confirm',
-      name: 'update',
-      message: 'Merge master?',
-    });
-
-    if (update) {
-      await wait(2000);
-
-      await execute('git merge origin/master');
-    }
 
     log('Success!');
   } catch (e) {
