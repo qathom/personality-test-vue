@@ -54,7 +54,7 @@ npm run lint
 
 ```bash
 # Build the app
-docker build --tag personality-test-vue:1.0 .
+docker build --tag personality-test-vue:latest .
 
 # List images
 docker images
