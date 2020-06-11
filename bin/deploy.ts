@@ -5,6 +5,7 @@ const folderName = 'dist';
 
 (async () => {
   try {
+    // WIP
     await execa('git', ['checkout', '--orphan', 'gh-pages']);
 
     console.log('Building...');
