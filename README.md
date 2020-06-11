@@ -40,9 +40,9 @@ npm run serve
 npm run build
 ```
 
-### Run unit tests
+### Run tests
 ```
-npm run test:unit
+npm run test
 ```
 
 ### Lints and fixes files
