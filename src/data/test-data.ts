@@ -119,12 +119,6 @@ const questionGroups: TestWordGroup[] = [
     { id: 76, word: 'particular', color: PersonalityColor.Green },
   ],
   [
-    { id: 77, word: 'emotional', color: PersonalityColor.Blue },
-    { id: 78, word: 'flexible/adaptable', color: PersonalityColor.Yellow },
-    { id: 79, word: 'likes recognition', color: PersonalityColor.Red },
-    { id: 80, word: 'particular', color: PersonalityColor.Green },
-  ],
-  [
     { id: 81, word: 'indirect', color: PersonalityColor.Yellow },
     { id: 82, word: 'frank/candid', color: PersonalityColor.Red },
     { id: 83, word: 'careful', color: PersonalityColor.Blue },
@@ -149,16 +143,10 @@ const questionGroups: TestWordGroup[] = [
     { id: 96, word: 'sets very high standards', color: PersonalityColor.Green },
   ],
   [
-    { id: 97, word: 'likes watching people', color: PersonalityColor.Red },
-    { id: 98, word: 'strong-willed', color: PersonalityColor.Blue },
-    { id: 99, word: 'enthusiastic', color: PersonalityColor.Green },
-    { id: 100, word: 'sets very high standards', color: PersonalityColor.Yellow },
-  ],
-  [
-    { id: 101, word: 'neat andtidy', color: PersonalityColor.Green },
-    { id: 102, word: 'looks good on outside', color: PersonalityColor.Yellow },
-    { id: 103, word: 'avoids conflicts', color: PersonalityColor.Blue },
-    { id: 104, word: 'usually right', color: PersonalityColor.Red },
+    { id: 97, word: 'neat andtidy', color: PersonalityColor.Green },
+    { id: 98, word: 'looks good on outside', color: PersonalityColor.Yellow },
+    { id: 99, word: 'avoids conflicts', color: PersonalityColor.Blue },
+    { id: 100, word: 'usually right', color: PersonalityColor.Red },
   ],
 ];
 
