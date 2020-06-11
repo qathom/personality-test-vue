@@ -1,6 +1,11 @@
 import questionGroups from '@/data/test-data';
 import { TestWord } from '../../types';
 
+/**
+ * Coutn items in our array of question objects
+ * @param checkKey - key of object
+ * @param checkValue - target value for comparison
+ */
 const countRelatedItems = (
   checkKey: keyof TestWord,
   checkValue: number|string,
