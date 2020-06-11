@@ -8,6 +8,10 @@ import { Doughnut, mixins } from 'vue-chartjs';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { ChartData, ChartOptions } from 'chart.js';
 
+/**
+ * This component is displaying a doughnut chart
+ * with the results of the profile test
+ */
 @Component({
   extends: Doughnut,
   mixins: [mixins.reactiveProp],

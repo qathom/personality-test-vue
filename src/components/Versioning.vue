@@ -10,7 +10,10 @@ import {
   Vue,
 } from 'vue-property-decorator';
 
-@Component({})
+/**
+ * This component is a tiny one which is used to display the app version
+ */
+@Component
 export default class Versioning extends Vue {
   @Prop(String)
   readonly version!: string;

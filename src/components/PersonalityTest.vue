@@ -55,6 +55,13 @@ import {
   AddSelectionPayload,
 } from '../../types';
 
+/**
+ * This component is taking care of the profile test
+ * It shows a progress bar to notify what is the current progress of the test profile
+ * (how many remaining questions)
+ * It also display the result once the test is done by passing the
+ * answers as a prop in PersonalityTestResultView
+ */
 @Component({
   components: {
     PersonalityTestResultView,

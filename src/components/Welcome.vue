@@ -19,6 +19,10 @@ import {
 import Versioning from '@/components/Versioning.vue';
 import { version } from '../../package.json';
 
+/**
+ * This component is showing the content of the home page view
+ * It displays a link to the profile test and the version of the app
+ */
 @Component({
   components: {
     Versioning,
