@@ -63,11 +63,11 @@ export default class PersonalityTestResultView extends Vue {
 
   private dominantColor!: PersonalityColor;
 
-  private chartData!: object;
+  private chartData!: Record<string, unknown>;
 
   private personalityColors: string[] = [];
 
-  private chartOptions: object = {
+  private chartOptions: Record<string, unknown> = {
     legend: {
       display: false,
     },
@@ -108,7 +108,6 @@ export default class PersonalityTestResultView extends Vue {
       const item = this.groups[key].find((groupItem) => groupItem.id === value);
 
       if (!item) {
-        console.warn('Warning! No color value for group item');
         return;
       }
 
